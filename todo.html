@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>To-Do List</h1>
+        <a href="./index.html"><button class="totals">Signup/Login</button></a>
+        <div class="form-group" id="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task...">
+            <button class="Add" onclick="addTask()">Add Task</button>
+        </div>
+        <div id="task-list"></div>
+        <div id="task-filter">
+            <button class="total" onclick="filterTasks('all')">All</button>
+            <button class="totalc" onclick="filterTasks('completed')">Completed</button>
+            <button class="totali" onclick="filterTasks('incomplete')">Incomplete</button>
+        </div>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>
